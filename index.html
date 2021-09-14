@@ -1,1 +1,43 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><title>React App</title><link href="/static/css/main.4caf6141.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],a=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(p&&p(r);s.length;)s.shift()();return u.push.apply(u,a||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpwork=this.webpackJsonpwork||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var a=0;a<f.length;a++)r(f[a]);var p=i;t()}([])</script><script src="/static/js/2.6fb311d8.chunk.js"></script><script src="/static/js/main.07b43851.chunk.js"></script></body></html>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="renderer" content="webkit"><meta name="force-rendering" content="webkit"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="keywords" content="寰烁科技,寰烁,科技"><meta name="description" content="寰烁科技基础项目"><link rel="icon" href="/favicon.ico"><title>寰烁科技</title><style>@-webkit-keyframes loadingCircle {to {transform:rotate(1turn)}}
+      @keyframes loadingCircle {to {transform:rotate(1turn)}}
+      .load-box {position:fixed;top:calc(50% - 11px);left:calc(50% - 111px);display:flex;align-items:center;}
+      .load-icon {animation:loadingCircle 1s linear infinite;}
+      .load-txt {font-size:16px;margin-left:10px;}</style><link href="/static/css/app.05fd6402.css" rel="stylesheet"></head><body><noscript><strong>We're sorry but 寰烁科技 doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id="app"><div class="load-box"><svg class="load-icon" viewBox="0 0 1024 1024" data-icon="loading" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false" class="anticon-spin"><path d="M988 548c-19.9 0-36-16.1-36-36 0-59.4-11.6-117-34.6-171.3a440.45 440.45 0 0 0-94.3-139.9 437.71 437.71 0 0 0-139.9-94.3C629 83.6 571.4 72 512 72c-19.9 0-36-16.1-36-36s16.1-36 36-36c69.1 0 136.2 13.5 199.3 40.3C772.3 66 827 103 874 150c47 47 83.9 101.8 109.7 162.7 26.7 63.1 40.2 130.2 40.2 199.3.1 19.9-16 36-35.9 36z"></path></svg> <span class="load-txt">页面正在加载中，请耐心等候。</span></div></div><script src="https://online-disk.oss-cn-beijing.aliyuncs.com/personal/1889143119-002/vc-upload-1605001315702-2vue.min.js"></script><script src="https://online-disk.oss-cn-beijing.aliyuncs.com/personal/1889143119-002/vc-upload-1605001315702-6vue-router.min.js"></script><script src="https://online-disk.oss-cn-beijing.aliyuncs.com/personal/1889143119-002/vc-upload-1605001315702-12axios.min.js"></script><script src="https://online-disk.oss-cn-beijing.aliyuncs.com/personal/1889143119-002/vc-upload-1605001315702-9vuex.min.js"></script><script>// 获取浏览器内核版本
+      function getBrowser() {
+        const ua = navigator.userAgent.toLowerCase();
+        let s, name = '', ver = 0;
+
+        //获取浏览器名称
+        (s = ua.match(/msie ([\d.]+)/)) ? _set("ie", _toFixedVersion(s[1])) :
+        //(s = ua.match(/firefox\/([\d.]+)/)) ? _set("firefox", _toFixedVersion(s[1])) :
+        (s = ua.match(/chrome\/([\d.]+)/)) ? _set("chrome", _toFixedVersion(s[1])) :
+        //(s = ua.match(/opera.([\d.]+)/)) ? _set("opera", _toFixedVersion(s[1])) :
+        (s = ua.match(/version\/([\d.]+).*safari/)) ? _set("safari", _toFixedVersion(s[1])) : 0;
+        
+        // 获取浏览器版本
+        function _toFixedVersion(ver, floatLength) {
+          ver = ('' + ver).replace(/_/g, '.');
+          floatLength = floatLength || 1;
+          ver = String(ver).split('.');
+          ver = ver[0] + '.' + (ver[1] || '0');
+          ver = Number(ver).toFixed(floatLength);
+          return ver;
+        }
+
+        function _set(bname, bver) {
+          name = bname;
+          ver = parseInt(bver);
+        }
+
+        return {name: name,ver: ver};
+      }
+
+      // 判断低版本浏览器跳警告
+      const browser = getBrowser();
+      if (
+        (browser.name === 'ie' && browser.ver < 11) ||
+        (browser.name === 'chrome' && browser.ver < 70) ||
+        (browser.name === 'safari' && browser.ver < 12)
+      ) {
+        alert("您当前的浏览器版本过低，请升级浏览器或更换到谷歌70及以上版本、QQ10及以上版本、360 11及以上版本浏览器。","浏览器不支持通知");
+      }</script><script src="/static/js/app.456f7cb6.js"></script></body></html>
